@@ -70,13 +70,13 @@
                   </div>
                   <div class="col-md-7 col-sm-12">
                     <h1 class="product__title">ПФА 201 водорастворимый</h1>
-  
+
                     <ul class="list product__list">
                       <li>Безгалогенный антипирен</li>
                       <li>Неорганический полимер с низкой степенью полимеризации (n 100)</li>
                       <li>Соль полифосфорной кислоты и аммиака</li>
                     </ul>
-  
+
                     <div class="product__files">
                       <a class="file" target="_blank"
                         href="https://www.antennahouse.com/hubfs/xsl-fo-sample/pdf/basic-link-1.pdf?hsLang=en">
@@ -86,9 +86,9 @@
                         </div>
                       </a>
                     </div>
-  
+
                     <div class="product__price">от 160 руб./кг</div>
-  
+
                     <div class="product__actions">
                       <button class="btn product__order">Оформить заявку</button>
                       <button class="btn product__sample">Пробный образец</button>
@@ -96,7 +96,7 @@
                   </div>
                 </div>
               </div>
-  
+
               <section class="section">
                 <div class="descr-box">
                   <h2 class="descr-box__title">Назначение продукта</h2>
@@ -104,14 +104,14 @@
                     огнестойкой обработки древесины, фанеры, ДВП, бумаги и волокон, так как при нагревании образует
                     фосфорную кислоту, являющуюся катализатором карбонизации и образования пены.</p>
                 </div>
-  
+
                 <div class="descr-box">
                   <h3 class="descr-box__title">Назначение продукта</h3>
                   <p class="descr-box__text">Продукт используется для приготовления вспучивающихся составов, для
                     огнестойкой обработки древесины, фанеры, ДВП, бумаги и волокон, так как при нагревании образует
                     фосфорную кислоту, являющуюся катализатором карбонизации и образования пены.</p>
                 </div>
-  
+
                 <div class="descr-box">
                   <h2 class="descr-box__title">Назначение продукта</h2>
                   <p class="descr-box__text">Продукт используется для приготовления вспучивающихся составов, для
@@ -127,7 +127,7 @@
           <h2 class="order-section__title">Оформите заявку на ПФА 201 водорастворимый</h2>
 
           <div class="order-section__block">
-            <form class="form order-form">
+            <form id="order-product-form" class="form order-form">
               <div class="form__item">
                 <div class="checkbox-group">
                   <label class="checkbox-group__item">
@@ -148,7 +148,7 @@
               </div>
 
               <div class="form__item">
-                <input class="form-control" type="text" label="Ваше имя">
+                <input name="name" class="form-control" type="text" label="Ваше имя">
               </div>
 
               <div class="form__item">
@@ -162,7 +162,7 @@
 
               <div class="form__item">
                 <label class="checkbox">
-                  <input type="checkbox" class="visually-hidden" checked required />
+                  <input type="checkbox" name="policy" class="visually-hidden" checked required />
                   <span class="checkbox__control"></span>
                   <span class="checkbox__label">Я принимаю условия политики обработки персональных данных</span>
                 </label>
@@ -285,16 +285,16 @@
                 <img src="./img/tz.png" alt="">
               </div>
 
-              <div class="col-5 services__form">
+              <div class="col-5">
                 <h2 class="services__title">Подберем огнестойкие <br> композиции по вашему ТЗ</h2>
 
-                <form class="form services__form">
+                <form id="service-form" class="form services__form">
                   <div class="form__item">
                     <textarea class="form-control" label="Расскажите о своей задаче"></textarea>
                   </div>
 
                   <div class="form__item">
-                    <input class="form-control" type="text" label="Ваше имя">
+                    <input class="form-control" name="name" type="text" label="Ваше имя" required>
                   </div>
 
                   <div class="form__item">
@@ -308,7 +308,7 @@
                   </div>
 
                   <label class="checkbox services__agree">
-                    <input type="checkbox" class="visually-hidden" checked required />
+                    <input type="checkbox" name="policy" class="visually-hidden" checked required />
                     <span class="checkbox__control"></span>
                     <span class="checkbox__label">Я принимаю условия политики обработки персональных данных</span>
                   </label>
@@ -323,7 +323,142 @@
 
     <footer class="footer">
       <div class="container">
-        Футер
+
+        <div class="footer__mobile">
+          <a href="/" class="logo"><img src="./img/logo.png" alt="Антипирены"></a>
+
+          <div class="footer-info">
+            <a class="footer-info__phone" href="tel:8 923 123-45-67">8 923 123-45-67</a>
+
+            <div class="footer-socials">
+              <a class="social-icon" href="#"><img src="./img/vk-gray.png" alt=""></a>
+              <a class="social-icon" href="#"><img src="./img/instagram-gray.png" alt=""></a>
+              <a class="social-icon" href="#"><img src="./img/facebook-gray.png" alt=""></a>
+            </div>
+          </div>
+
+          <div class="footer-meta__list">
+            <ul>
+              <li>sait.ru (c) 2013-2020</li>
+              <li>Все права защищены</li>
+            </ul>
+          </div>
+
+          <div class="footer-meta__list">
+            <ul>
+              <li>ООО</li>
+              <li>ИНН</li>
+              <li>ОГРН</li>
+            </ul>
+          </div>
+
+          <div class="footer-meta__list">
+            <ul>
+              <li><a data-fancybox data-src="#policy" href="javascript:;">Политика конфиденциальности</a></li>
+              <li><a data-fancybox data-src="#policy2" href="javascript:;">Политика обработки персональных данных</a>
+              </li>
+            </ul>
+          </div>
+
+          <p>На сайте используются файлы "<a data-fancybox data-src="#cookie" href="javascript:;">cookie</a>", которые
+            содержат в себе информацию о предыдущих
+            посещениях веб-сайта. Если Вы не хотите использовать файлы "<a data-fancybox data-src="#cookie"
+              href="javascript:;">cookie</a>" – измените настройки браузера.</p>
+
+          <p>Цены, указанные на сайте, не являются публичной офертой, носят исключительно
+            справочную информацию и могут измениться в любой момент.</p>
+
+          <p>Разработка - <a href="#" target="_blank">СтандартМаркетинг</a></p>
+        </div>
+
+        <div class="footer__links">
+          <div class="footer-links">
+            <div class="footer-links__title">Продукция</div>
+
+            <ul class="footer-links__list">
+              <li><a href="#">ПФА 201 водорастворимый</a></li>
+              <li><a href="#">ПФА 201 водорастворимый</a></li>
+              <li><a href="#">ПФА 201 водорастворимый</a></li>
+              <li><a href="#">ПФА 201 водорастворимый</a></li>
+              <li><a href="#">ПФА 201 водорастворимый</a></li>
+              <li><a href="#">ПФА 201 водорастворимый</a></li>
+              <li><a href="#">ПФА 201 водорастворимый</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <div class="footer-links__title">О компании</div>
+
+            <ul class="footer-links__list">
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">О нас</a></li>
+              <li><a href="#">Продукты</a></li>
+              <li><a href="#">Услуги</a></li>
+              <li><a href="#">Блог</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <div class="footer-links__title">Другие сайты</div>
+
+            <ul class="footer-links__list">
+              <li><a href="#">Антиржавин</a></li>
+              <li><a href="#">Новохим</a></li>
+              <li><a href="#">ИХТЦ</a></li>
+              <li><a href="#">Дезновохим</a></li>
+              <li><a href="#">https://novochem-wt.ru</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__meta">
+          <div class="footer-meta">
+            <p class="footer-meta__text">На сайте используются файлы "<a data-fancybox data-src="#cookie"
+                href="javascript:;">cookie</a>", которые содержат в себе информацию о предыдущих
+              посещениях веб-сайта. Если Вы не хотите использовать файлы "<a data-fancybox data-src="#cookie"
+                href="javascript:;">cookie</a>" – измените настройки браузера.</p>
+
+            <div class="footer-meta__list">
+              <ul>
+                <li>sait.ru (c) 2013-2020</li>
+                <li>Все права защищены</li>
+              </ul>
+
+              <ul>
+                <li>ООО</li>
+                <li>ИНН</li>
+                <li>ОГРН</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-meta">
+            <p class="footer-meta__text">Цены, указанные на сайте, не являются публичной офертой, носят исключительно
+              справочную информацию и могут измениться в любой момент.</p>
+
+            <div class="footer-meta__list">
+              <ul>
+                <li><a data-fancybox data-src="#policy" href="javascript:;">Политика конфиденциальности</a></li>
+                <li><a data-fancybox data-src="#policy2" href="javascript:;">Политика обработки персональных данных</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-info">
+            <a class="footer-info__phone" href="tel:8 923 123-45-67">8 923 123-45-67</a>
+
+            <div class="footer-info__socials footer-socials">
+              <a class="social-icon" href="#"><img src="./img/vk-gray.png" alt=""></a>
+              <a class="social-icon" href="#"><img src="./img/instagram-gray.png" alt=""></a>
+              <a class="social-icon" href="#"><img src="./img/facebook-gray.png" alt=""></a>
+            </div>
+
+            <span class="footer-info__developer">Разработка - <a href="#" target="_blank">СтандартМаркетинг</a></span>
+          </div>
+        </div>
+
       </div>
     </footer>
   </div>
@@ -335,9 +470,9 @@
         <div class="order-popup__descr">Перезвоним в ближайшее время</div>
       </header>
 
-      <form class="form order-form">
+      <form id="order-form" class="form order-form">
         <div class="form__item">
-          <input class="form-control" type="text" label="Ваше имя">
+          <input class="form-control" name="name" type="text" label="Ваше имя" required>
         </div>
 
         <div class="form__item">
@@ -351,12 +486,39 @@
 
         <div class="form__item">
           <label class="checkbox">
-            <input type="checkbox" class="visually-hidden" checked required />
+            <input type="checkbox" name="policy" class="visually-hidden" checked required />
             <span class="checkbox__control"></span>
             <span class="checkbox__label">Я принимаю условия политики обработки персональных данных</span>
           </label>
         </div>
       </form>
+    </div>
+
+    <div id="policy">
+      <div class="site-meta">
+        <h2>Политика конфиденциальности</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum illum porro quis fuga obcaecati est nostrum
+          reiciendis officiis distinctio labore eveniet, soluta cum eius quo praesentium voluptatum quod nemo excepturi.
+        </p>
+      </div>
+    </div>
+
+    <div id="policy2">
+      <div class="site-meta">
+        <h2>Политика обработки персональных данных</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum illum porro quis fuga obcaecati est nostrum
+          reiciendis officiis distinctio labore eveniet, soluta cum eius quo praesentium voluptatum quod nemo excepturi.
+        </p>
+      </div>
+    </div>
+
+    <div id="cookie">
+      <div class="site-meta">
+        <h2>Cookie</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum illum porro quis fuga obcaecati est nostrum
+          reiciendis officiis distinctio labore eveniet, soluta cum eius quo praesentium voluptatum quod nemo excepturi.
+        </p>
+      </div>
     </div>
   </div>
 
