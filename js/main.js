@@ -5,6 +5,12 @@ $(function () {
     slidesToScroll: 1
   });
 
+  $('#hero-slider').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  });  
+
   $('input.form-control, textarea.form-control').floatingLabel();
 
   $('input.phone-input').inputmask({
