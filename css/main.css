@@ -77,6 +77,10 @@ img {
   height: auto;
 }
 
+.fancybox-active {
+  height: 100% !important;
+}
+
 .wrapper {
   height: 100%;
   display: flex;
@@ -1060,6 +1064,62 @@ textarea.form-control.floating-input__input {
 
 .social-icon {
   display: inline-block;
+}
+
+/* ----------- Not Found ---------- */
+.not-found {
+  text-align: center;
+  padding: 90px 0 50px;
+}
+
+.not-found__title {
+  margin: 0 0 40px;
+}
+
+.not-found__descr {
+  font-size: 20px;
+  margin: 0;
+}
+
+.not-found__header:after {
+  content: '';
+  display: inline-block;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  margin: 25px 0;
+  background: url(../img/arrow-down.png);
+}
+
+.not-found__maybe {
+  font-size: 18px;
+  font-weight: normal;
+  color: #6a3df7;
+  margin: 0 0 20px;
+}
+
+.not-found__links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.not-found__links li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.not-found__links a {
+  font-size: 16px;
+  color: #3b3187;
+  display: inline-block;
+  padding-bottom: 2px;
+  border-bottom: 1px solid var(--primary-color);
+  transition: .15s border ease;
+}
+
+.not-found__links a:hover {
+  border-color: transparent;
+  opacity: 1;
 }
 
 /* ----------- Media queries ---------- */
