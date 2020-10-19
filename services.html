@@ -88,7 +88,7 @@
             <div class="col-md-6 services-hero__descr">
               <h1 class="services-hero__title">Разработаем антипирены <br>по вашему ТЗ</h1>
               <p class="services-hero__descr">Не нашли нужный? Разработаем под вас</p>
-              <button class="btn btn--primary">Узнать условия</button>
+              <button data-type="order" data-target="service-order" class="btn btn--primary">Узнать условия</button>
             </div>
 
             <div class="col-md-6">
@@ -104,13 +104,13 @@
           <div class="work-steps__item"><span>Производство</span></div>
         </div>
 
-        <section class="order-section">
+        <section class="order-section" id="service-order">
           <h2 class="order-section__title">Получите условия для производства по ТЗ</h2>
 
           <div class="order-section__block">
-            <form class="form order-form">
+            <form id="order-form" class="form order-form">
               <div class="form__item">
-                <input class="form-control" type="text" label="Ваше имя">
+                <input class="form-control" name="name" type="text" label="Ваше имя" required>
               </div>
 
               <div class="form__item">
@@ -124,7 +124,7 @@
 
               <div class="form__item">
                 <label class="checkbox">
-                  <input type="checkbox" class="visually-hidden" checked required />
+                  <input type="checkbox" name="policy" class="visually-hidden" checked required />
                   <span class="checkbox__control"></span>
                   <span class="checkbox__label">Я принимаю условия политики обработки персональных данных</span>
                 </label>

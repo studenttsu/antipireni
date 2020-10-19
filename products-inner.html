@@ -114,7 +114,7 @@
                     <div class="product__price">от 160 руб./кг</div>
 
                     <div class="product__actions">
-                      <button class="btn product__order">Оформить заявку</button>
+                      <button data-type="order" data-target="product-order" class="btn product__order">Оформить заявку</button>
                       <button class="btn product__sample">Пробный образец</button>
                     </div>
                   </div>
@@ -147,7 +147,7 @@
           </div>
         </section>
 
-        <section class="section order-section">
+        <section class="section order-section" id="product-order">
           <h2 class="order-section__title">Оформите заявку на ПФА 201 водорастворимый</h2>
 
           <div class="order-section__block">
@@ -163,7 +163,7 @@
                   </label>
                   <label class="checkbox-group__item">
                     <label class="checkbox">
-                      <input type="checkbox" class="visually-hidden" />
+                      <input id="sample-checkbox" type="checkbox" class="visually-hidden" />
                       <span class="checkbox__control"></span>
                       <span class="checkbox__label">Пробный образец</span>
                     </label>
@@ -219,7 +219,7 @@
 
                   <div class="product-card__meta">
                     <span class="product-card__price">от 160 руб./кг</span>
-                    <button class="btn product-card__order">Оформить заявку</button>
+                    <button data-type="order" data-target="services-section" class="btn product-card__order">Оформить заявку</button>
                     <a href="#" class="btn btn--link">Подробнее</a>
                   </div>
                 </div><!-- .product-card -->
@@ -242,7 +242,7 @@
 
                   <div class="product-card__meta">
                     <span class="product-card__price">от 160 руб./кг</span>
-                    <button class="btn product-card__order">Оформить заявку</button>
+                    <button data-type="order" data-target="services-section" class="btn product-card__order">Оформить заявку</button>
                     <a href="#" class="btn btn--link">Подробнее</a>
                   </div>
                 </div><!-- .product-card -->
@@ -265,7 +265,7 @@
 
                   <div class="product-card__meta">
                     <span class="product-card__price">от 160 руб./кг</span>
-                    <button class="btn product-card__order">Оформить заявку</button>
+                    <button data-type="order" data-target="services-section" class="btn product-card__order">Оформить заявку</button>
                     <a href="#" class="btn btn--link">Подробнее</a>
                   </div>
                 </div><!-- .product-card -->
@@ -288,7 +288,7 @@
 
                   <div class="product-card__meta">
                     <span class="product-card__price">от 160 руб./кг</span>
-                    <button class="btn product-card__order">Оформить заявку</button>
+                    <button data-type="order" data-target="services-section" class="btn product-card__order">Оформить заявку</button>
                     <a href="#" class="btn btn--link">Подробнее</a>
                   </div>
                 </div><!-- .product-card -->
@@ -309,7 +309,7 @@
                 <img src="./img/tz.png" alt="">
               </div>
 
-              <div class="col-md-5">
+              <div class="col-md-5" id="services-section">
                 <h2 class="services__title">Подберем огнестойкие <br> композиции по вашему ТЗ</h2>
 
                 <form id="service-form" class="form services__form">

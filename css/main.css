@@ -170,13 +170,25 @@ img {
   text-align: center;
 }
 
+.btn:hover {
+  background-color: #dfdede;
+}
+
 .btn--primary {
   background-color: var(--primary-color);
+}
+
+.btn--primary:hover {
+  background-color: #c2d01e;
 }
 
 .btn--link {
   background: none;
   color: var(--link-color);
+}
+
+.btn--link:hover {
+  background: none;
 }
 
 textarea {
@@ -427,6 +439,12 @@ textarea.form-control.floating-input__input {
 .lang-select {
   display: flex;
   align-items: center;
+  transition: .3s ease opacity;
+  cursor: pointer;
+}
+
+.lang-select:hover {
+  opacity: 0.5;
 }
 
 .lang-select img {
@@ -451,6 +469,11 @@ textarea.form-control.floating-input__input {
   font-size: 14px;
   font-weight: bold;
   color: var(--main-color);
+  transition: 0.3s ease opacity;
+}
+
+.navigation a:hover {
+  opacity: 0.5;
 }
 
 /* ----------- Hero Banner ---------- */
@@ -539,6 +562,10 @@ textarea.form-control.floating-input__input {
   margin: auto;
   width: 100%;
   background-color: #ded9f3;
+}
+
+.product-card__order:hover {
+  background-color: #d1cbef;
 }
 
 /* ----------- Section ---------- */
@@ -884,10 +911,19 @@ textarea.form-control.floating-input__input {
   background-color: #ded9f3;
 }
 
+.product__order:hover {
+  background-color: #d1cbef;
+}
+
 .product__sample {
   background-color: transparent;
   border: 1px solid #b6addc;
   color: #b6addc;
+}
+
+.product__sample.active,
+.product__sample:hover {
+  background-color: #f3f1fb;
 }
 
 /* ----------- Descr Box ---------- */

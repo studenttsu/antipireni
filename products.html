@@ -83,42 +83,44 @@
           </ul>
         </div>
 
-        <h1 class="inner-page__title">h1</h1>
-
-        <div id="hero-slider" class="hero-slider">
-          <div class="hero-slider__item">
-            <a href="#">
-              <picture>
-                <source media="(max-width: 768px)"
-                  srcset="https://antirzhavin.ru/upload/resize_cache/iblock/73e/768_250_1/sp-mb.jpeg" type="image/jpg">
-                <source media="(max-width: 480px)" srcset="./img/slider-img.jpg" type="image/jpg">
-                <img src="./img/slider-img.jpg" alt="" />
-              </picture>
-            </a>
+        <section class="section">
+          <h1 class="inner-page__title">h1</h1>
+  
+          <div id="hero-slider" class="hero-slider">
+            <div class="hero-slider__item">
+              <a href="#">
+                <picture>
+                  <source media="(max-width: 768px)"
+                    srcset="https://antirzhavin.ru/upload/resize_cache/iblock/73e/768_250_1/sp-mb.jpeg" type="image/jpg">
+                  <source media="(max-width: 480px)" srcset="./img/slider-img.jpg" type="image/jpg">
+                  <img src="./img/slider-img.jpg" alt="" />
+                </picture>
+              </a>
+            </div>
+  
+            <div class="hero-slider__item">
+              <a href="#">
+                <picture>
+                  <source media="(max-width: 768px)"
+                    srcset="https://antirzhavin.ru/upload/resize_cache/iblock/73e/768_250_1/sp-mb.jpeg" type="image/jpg">
+                  <source media="(max-width: 480px)" srcset="./img/slider-img.jpg" type="image/jpg">
+                  <img src="./img/slider-img.jpg" alt="" />
+                </picture>
+              </a>
+            </div>
+  
+            <div class="hero-slider__item">
+              <a href="#">
+                <picture>
+                  <source media="(max-width: 768px)"
+                    srcset="https://antirzhavin.ru/upload/resize_cache/iblock/73e/768_250_1/sp-mb.jpeg" type="image/jpg">
+                  <source media="(max-width: 480px)" srcset="./img/slider-img.jpg" type="image/jpg">
+                  <img src="./img/slider-img.jpg" alt="" />
+                </picture>
+              </a>
+            </div>
           </div>
-
-          <div class="hero-slider__item">
-            <a href="#">
-              <picture>
-                <source media="(max-width: 768px)"
-                  srcset="https://antirzhavin.ru/upload/resize_cache/iblock/73e/768_250_1/sp-mb.jpeg" type="image/jpg">
-                <source media="(max-width: 480px)" srcset="./img/slider-img.jpg" type="image/jpg">
-                <img src="./img/slider-img.jpg" alt="" />
-              </picture>
-            </a>
-          </div>
-
-          <div class="hero-slider__item">
-            <a href="#">
-              <picture>
-                <source media="(max-width: 768px)"
-                  srcset="https://antirzhavin.ru/upload/resize_cache/iblock/73e/768_250_1/sp-mb.jpeg" type="image/jpg">
-                <source media="(max-width: 480px)" srcset="./img/slider-img.jpg" type="image/jpg">
-                <img src="./img/slider-img.jpg" alt="" />
-              </picture>
-            </a>
-          </div>
-        </div>
+        </section>
 
         <section class="section">
           <header class="section__header">
@@ -144,7 +146,30 @@
 
                   <div class="product-card__meta">
                     <span class="product-card__price">от 160 руб./кг</span>
-                    <button class="btn product-card__order">Оформить заявку</button>
+                    <button data-type="order" data-target="services-section" class="btn product-card__order">Оформить заявку</button>
+                    <a href="#" class="btn btn--link">Подробнее</a>
+                  </div>
+                </div><!-- .product-card -->
+              </div>
+
+              <div class="col-lg-3 col-sm-6">
+                <div class="product-card">
+                  <div class="product-card__img">
+                    <img src="./img/product.png" alt="">
+                  </div>
+
+                  <div class="product-card__descr">
+                    <h3 class="product-card__title">ПФА 201 водорастворимый</h3>
+                    <ul class="list product-card__list">
+                      <li>ПФА 201 водорастворимый</li>
+                      <li>Неорганический полимер с низкой степенью полимеризации (n 100)</li>
+                      <li>Соль полифосфорной кислоты и аммиака</li>
+                    </ul>
+                  </div>
+
+                  <div class="product-card__meta">
+                    <span class="product-card__price">от 160 руб./кг</span>
+                    <button data-type="order" data-target="services-section" class="btn product-card__order">Оформить заявку</button>
                     <a href="#" class="btn btn--link">Подробнее</a>
                   </div>
                 </div><!-- .product-card -->
@@ -167,7 +192,7 @@
 
                   <div class="product-card__meta">
                     <span class="product-card__price">от 160 руб./кг</span>
-                    <button class="btn product-card__order">Оформить заявку</button>
+                    <button data-type="order" data-target="services-section" class="btn product-card__order">Оформить заявку</button>
                     <a href="#" class="btn btn--link">Подробнее</a>
                   </div>
                 </div><!-- .product-card -->
@@ -180,7 +205,7 @@
                   </div>
 
                   <div class="product-card__descr">
-                    <h2 class="product-card__title">ПФА 201 водорастворимый</h2>
+                    <h3 class="product-card__title">ПФА 201 водорастворимый</h3>
                     <ul class="list product-card__list">
                       <li>ПФА 201 водорастворимый</li>
                       <li>Неорганический полимер с низкой степенью полимеризации (n 100)</li>
@@ -190,30 +215,7 @@
 
                   <div class="product-card__meta">
                     <span class="product-card__price">от 160 руб./кг</span>
-                    <button class="btn product-card__order">Оформить заявку</button>
-                    <a href="#" class="btn btn--link">Подробнее</a>
-                  </div>
-                </div><!-- .product-card -->
-              </div>
-
-              <div class="col-lg-3 col-sm-6">
-                <div class="product-card">
-                  <div class="product-card__img">
-                    <img src="./img/product.png" alt="">
-                  </div>
-
-                  <div class="product-card__descr">
-                    <h2 class="product-card__title">ПФА 201 водорастворимый</h2>
-                    <ul class="list product-card__list">
-                      <li>ПФА 201 водорастворимый</li>
-                      <li>Неорганический полимер с низкой степенью полимеризации (n 100)</li>
-                      <li>Соль полифосфорной кислоты и аммиака</li>
-                    </ul>
-                  </div>
-
-                  <div class="product-card__meta">
-                    <span class="product-card__price">от 160 руб./кг</span>
-                    <button class="btn product-card__order">Оформить заявку</button>
+                    <button data-type="order" data-target="services-section" class="btn product-card__order">Оформить заявку</button>
                     <a href="#" class="btn btn--link">Подробнее</a>
                   </div>
                 </div><!-- .product-card -->
@@ -250,7 +252,7 @@
                 <img src="./img/tz.png" alt="">
               </div>
 
-              <div class="col-md-5">
+              <div class="col-md-5" id="services-section">
                 <h2 class="services__title">Подберем огнестойкие <br> композиции по вашему ТЗ</h2>
 
                 <form id="service-form" class="form services__form">
