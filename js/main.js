@@ -3,6 +3,10 @@ $(function () {
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
+    dots: true,
+    autoplay: true,
+    arrows: false,
+    autoplaySpeed: 3500,
     responsive: [
       {
         breakpoint: 992,
@@ -24,7 +28,9 @@ $(function () {
   $('#hero-slider').slick({
     infinite: true,
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    dots: true,
+    arrows: false
   });
 
   $('input.form-control, textarea.form-control').floatingLabel();
@@ -38,6 +44,11 @@ $(function () {
     $('.mobile-menu').toggleClass('active');
     $('body').toggleClass('no-scroll');
   });
+
+  $.validator.addMethod("phoneValidator", function (phone_number) {
+    const phoneRegexp = /^((8|7|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{10}$|^$/;
+    return phoneRegexp.test(phone_number);
+  }, "Invalid phone number");
 
   $('form#order-form').validate({
     rules: {
@@ -97,4 +108,8 @@ $(function () {
     let check = $('#sample-checkbox');
     check.prop('checked', !check.prop('checked'));
   });
+
+  $('#sample-checkbox').change(function() {
+    $('.product__sample').toggleClass('active')
+  })
 });

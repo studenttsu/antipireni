@@ -270,7 +270,7 @@ textarea.form-control.floating-input__input {
   display: inline-block;
   margin-left: 10px;
   font-size: 14px;
-  line-height: 26px;
+  padding-top: 4px;
 }
 
 .checkbox-group {
@@ -439,7 +439,7 @@ textarea.form-control.floating-input__input {
 .lang-select {
   display: flex;
   align-items: center;
-  transition: .3s ease opacity;
+  transition: 0.3s ease opacity;
   cursor: pointer;
 }
 
@@ -710,6 +710,38 @@ textarea.form-control.floating-input__input {
   height: 445px;
 }
 
+.slick-dots li {
+  margin: 0;
+}
+
+.main-slider .slick-dots,
+.hero-slider .slick-dots {
+  bottom: 8px;
+}
+
+.hero-slider__item a {
+  display: block;
+}
+
+.slick-dots li button:before {
+  color: #ffffff;
+  opacity: 1;
+  font-size: 8px;
+}
+
+.slick-dots li button {
+  transition: 0.2s ease opacity;
+}
+
+.slick-dots li button:hover {
+  opacity: 0.7;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #3e2d8f;
+  opacity: 1;
+}
+
 .slick-slide {
   outline: 0;
 }
@@ -845,6 +877,7 @@ textarea.form-control.floating-input__input {
 .order-form .checkbox__label {
   color: #a19cab;
   font-size: 12px;
+  padding-top: 6px;
 }
 
 .order-section__title {
@@ -1707,6 +1740,25 @@ textarea.form-control.floating-input__input {
   .hero-slider {
     margin-left: -15px;
     margin-right: -15px;
+  }
+
+  .product__actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* max-width: 200px; */
+    margin: auto;
+  }
+
+  .product__actions .btn:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .product__actions .btn {
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
   }
 
   .descr-box,
