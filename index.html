@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/10.0.2/css/intlTelInput.css" />
 
   <link rel="stylesheet" href="./fonts/HelveticaNeueCyr/stylesheet.css">
   <link rel="stylesheet" href="./css/main.css">
@@ -79,7 +80,8 @@
         <div class="hero-banner">
           <div class="hero-banner__descr">
             <div class="hero-banner__title">Антипирены напрямую от&nbsp;производителя</div>
-            <button data-type="order" data-target="services-section" class="hero-banner__order btn btn--primary">Подберем ТЗ</button>
+            <button data-type="order" data-target="services-section"
+              class="hero-banner__order btn btn--primary">Подберем ТЗ</button>
           </div>
 
           <div class="hero-banner__img"><img src="./img/product.png" alt=""></div>
@@ -93,35 +95,35 @@
                 <a href="#" class="btn">Продукты</a>
               </div>
             </div>
-  
+
             <div class="main-slider__item">
               <div class="main-slider__inner">
                 <span>Группа компаний <br> "Новохим"</span>
                 <a href="#" class="btn">О нас</a>
               </div>
             </div>
-  
+
             <div class="main-slider__item">
               <div class="main-slider__inner">
                 <span>Подбор огнестойких композитов по ТЗ&nbsp;заказчика</span>
                 <a href="#" class="btn">Услуги</a>
               </div>
             </div>
-  
+
             <div class="main-slider__item">
               <div class="main-slider__inner">
                 <span>Сырье для повышения огнестойкости ЛКМ и&nbsp;полимеров</span>
                 <a href="#" class="btn">Продукты</a>
               </div>
             </div>
-  
+
             <div class="main-slider__item">
               <div class="main-slider__inner">
                 <span>Группа компаний <br> "Новохим"</span>
                 <a href="#" class="btn">О нас</a>
               </div>
             </div>
-  
+
             <div class="main-slider__item">
               <div class="main-slider__inner">
                 <span>Подбор огнестойких композитов по ТЗ&nbsp;заказчика</span>
@@ -155,7 +157,8 @@
 
                   <div class="product-card__meta">
                     <span class="product-card__price">от 160 руб./кг</span>
-                    <button data-type="order" data-target="services-section" class="btn product-card__order">Оформить заявку</button>
+                    <button data-type="order" data-target="services-section" class="btn product-card__order">Оформить
+                      заявку</button>
                     <a href="#" class="btn btn--link">Подробнее</a>
                   </div>
                 </div><!-- .product-card -->
@@ -178,7 +181,8 @@
 
                   <div class="product-card__meta">
                     <span class="product-card__price">от 160 руб./кг</span>
-                    <button data-type="order" data-target="services-section" class="btn product-card__order">Оформить заявку</button>
+                    <button data-type="order" data-target="services-section" class="btn product-card__order">Оформить
+                      заявку</button>
                     <a href="#" class="btn btn--link">Подробнее</a>
                   </div>
                 </div><!-- .product-card -->
@@ -201,7 +205,8 @@
 
                   <div class="product-card__meta">
                     <span class="product-card__price">от 160 руб./кг</span>
-                    <button data-type="order" data-target="services-section" class="btn product-card__order">Оформить заявку</button>
+                    <button data-type="order" data-target="services-section" class="btn product-card__order">Оформить
+                      заявку</button>
                     <a href="#" class="btn btn--link">Подробнее</a>
                   </div>
                 </div><!-- .product-card -->
@@ -224,7 +229,8 @@
 
                   <div class="product-card__meta">
                     <span class="product-card__price">от 160 руб./кг</span>
-                    <button data-type="order" data-target="services-section" class="btn product-card__order">Оформить заявку</button>
+                    <button data-type="order" data-target="services-section" class="btn product-card__order">Оформить
+                      заявку</button>
                     <a href="#" class="btn btn--link">Подробнее</a>
                   </div>
                 </div><!-- .product-card -->
@@ -328,7 +334,7 @@
 
                 <form id="service-form" class="form services__form">
                   <div class="form__item">
-                    <textarea class="form-control" label="Расскажите о своей задаче"></textarea>
+                    <textarea class="form-control" label="Расскажите о своей задаче" required></textarea>
                   </div>
 
                   <div class="form__item">
@@ -532,31 +538,42 @@
       </form>
     </div>
 
-    <div id="policy">
-      <div class="site-meta">
-        <h2>Политика конфиденциальности</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum illum porro quis fuga obcaecati est nostrum
-          reiciendis officiis distinctio labore eveniet, soluta cum eius quo praesentium voluptatum quod nemo excepturi.
-        </p>
-      </div>
+    <div id="policy" class="site-meta">
+      <h2>Политика конфиденциальности</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum illum porro quis fuga obcaecati est nostrum
+        reiciendis officiis distinctio labore eveniet, soluta cum eius quo praesentium voluptatum quod nemo excepturi.
+      </p>
     </div>
 
-    <div id="policy2">
-      <div class="site-meta">
-        <h2>Политика обработки персональных данных</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum illum porro quis fuga obcaecati est nostrum
-          reiciendis officiis distinctio labore eveniet, soluta cum eius quo praesentium voluptatum quod nemo excepturi.
-        </p>
+    <div id="policy2" class="site-meta">
+      <h2>Политика обработки персональных данных</h2>
+      <p>Данное соглашение создано нами с целью максимальной защищенности ваших данных. Пожалуйста, прочтите
+        внимательно нашу политику конфиденциальности.</p>
+      <p>
+        Когда вы отправляете заявку на нашем сайте с целью получения услуг, какой-либо справочной информации или
+        обратной связи, вы автоматически даете согласие на обработку нами ваших персональных данных, а также иной
+        информации: хранение, использование и сбор. Мы гарантируем, что ваши личные и персональные данные никогда не
+        будут переданы третьим лицам.</p>
+
+      <div>
+        Все указываемые персональные данные, такие как:
+        <ul>
+          <li>адрес электронной почты,</li>
+          <li>ваше имя,</li>
+          <li>тактный номер телефона</li>
+        </ul>
       </div>
+
+      <p>
+        Мы используем исключительно для связи с вами в следующих случаях: ответ на вопросы, обработка ваших заявок.
+      </p>
     </div>
 
-    <div id="cookie">
-      <div class="site-meta">
-        <h2>Cookie</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum illum porro quis fuga obcaecati est nostrum
-          reiciendis officiis distinctio labore eveniet, soluta cum eius quo praesentium voluptatum quod nemo excepturi.
-        </p>
-      </div>
+    <div id="cookie" class="site-meta">
+      <h2>Cookie</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum illum porro quis fuga obcaecati est nostrum
+        reiciendis officiis distinctio labore eveniet, soluta cum eius quo praesentium voluptatum quod nemo excepturi.
+      </p>
     </div>
   </div>
 
@@ -565,7 +582,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/10.0.2/js/intlTelInput.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/10.0.2/js/utils.js"></script>
+  
   <script src="./js/floatingLabel.js"></script>
   <script src="./js/main.js"></script>
 </body>
