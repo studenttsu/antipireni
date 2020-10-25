@@ -89,10 +89,12 @@ $(function () {
     let target = $(this).data('target');
     const element = document.querySelector(`#${target}`);
     element.scrollIntoView({ block: "start", behavior: "smooth" });
+  });
 
-    // $([document.documentElement, document.body]).animate({
-    //   scrollTop: $(`#${target}`).offset().top
-    // }, 1000);
+  
+  $('.product__order').click(function () {
+    let check = $('#order-checkbox');
+    check.prop('checked', true);
   });
 
   $('.product__sample').click(function () {

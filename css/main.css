@@ -310,7 +310,10 @@ width: 100%;
   display: inline-block;
   margin-left: 10px;
   font-size: 14px;
-  padding-top: 4px;
+  min-height: 26px;
+  display: flex;
+  align-items: center;
+  padding-top: 0;
 }
 
 .checkbox-group {
@@ -338,7 +341,6 @@ width: 100%;
 .checkbox-group__item .checkbox__label {
   cursor: pointer;
   font-size: 14px !important;
-  padding-top: 5px;
 }
 
 .floating-input {
@@ -433,7 +435,6 @@ textarea.form-control + .floating-input__label {
 
 .services__agree .checkbox__label {
   font-size: 12px;
-  padding-top: 6px;
 }
 
 /* ----------- Header ---------- */
@@ -893,7 +894,7 @@ textarea.form-control + .floating-input__label {
   display: flex;
   background-color: #f5f4f7;
   border-radius: 20px;
-  margin: 65px 0;
+  margin: 65px 0 30px;
 }
 
 .work-steps__item {
