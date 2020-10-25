@@ -95,34 +95,34 @@ $(function () {
     // }, 1000);
   });
 
-  $('.product__sample').click(function() {
+  $('.product__sample').click(function () {
     let check = $('#sample-checkbox');
     check.prop('checked', true);
   });
 
-  $('#sample-checkbox').change(function() {
+  $('#sample-checkbox').change(function () {
     $('.product__sample').toggleClass('active')
   });
 
-  function phone_mask(){
+  function phone_mask() {
     $('input.phone-input').inputmask({
       mask: '+7 (999) 999-99-99'
     });
 
     $("input.phone-input").intlTelInput({
-      autoHideDialCode:false,
-      autoPlaceholder:"aggressive",
-      placeholderNumberType:"MOBILE",
-      preferredCountries:['ru'],
-      separateDialCode:true,
-      utilsScript:"js/utils.js",
-      customPlaceholder:function(selectedCountryPlaceholder,selectedCountryData){
-        return '+'+selectedCountryData.dialCode+' '+selectedCountryPlaceholder.replace(/[0-9]/g,'_');
+      autoHideDialCode: false,
+      autoPlaceholder: "aggressive",
+      placeholderNumberType: "MOBILE",
+      preferredCountries: ['ru'],
+      separateDialCode: true,
+      utilsScript: "js/utils.js",
+      customPlaceholder: function (selectedCountryPlaceholder, selectedCountryData) {
+        return '+' + selectedCountryData.dialCode + ' ' + selectedCountryPlaceholder.replace(/[0-9]/g, '_');
       },
     });
-    $("input.phone-input").on("countrychange",function(e,countryData){
+    $("input.phone-input").on("countrychange", function (e, countryData) {
       $(this).val('');
-      $(this).inputmask($(this).attr('placeholder').replace(/[_]/g,'9'));
+      $(this).inputmask($(this).attr('placeholder').replace(/[_]/g, '9'));
     });
   }
 

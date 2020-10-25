@@ -220,6 +220,11 @@ textarea.form-control.floating-input__input {
 width: 100%;
 }
 
+.intl-tel-input.iti-container {
+  z-index: 99999;
+  width: 85%;
+}
+
 .intl-tel-input .selected-dial-code {
   display: none !important;
 }
