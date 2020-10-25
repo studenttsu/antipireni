@@ -348,6 +348,7 @@ width: 100%;
 }
 
 .floating-input.focus .floating-input__label {
+  top: 22px;
   transform: translate(0, -10px);
   font-size: 12px;
 }
@@ -364,13 +365,18 @@ width: 100%;
   opacity: 0.5;
 }
 
+textarea.form-control + .floating-input__label {
+  top: 22px;
+  transform: none;
+}
+
 .floating-input__label {
   display: block;
-  /* background: var(--main-gray); */
   position: absolute;
   height: 15px;
   line-height: 1;
-  top: 22px;
+  top: 50%;
+  transform: translateY(-50%);
   left: 1px;
   right: 1px;
   padding: 0 25px;
