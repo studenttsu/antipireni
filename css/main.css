@@ -150,8 +150,7 @@ img {
   border-radius: 50%;
   background-color: var(--blue-color);
   left: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 5px;
   position: absolute;
 }
 
@@ -986,7 +985,7 @@ textarea.form-control + .floating-input__label {
   margin: 30px 0;
 }
 
-.product__files .file {
+.product__files .file:not(:last-child) {
   margin-bottom: 15px;
 }
 
@@ -1741,6 +1740,10 @@ textarea.form-control + .floating-input__label {
     display: none;
   }
 
+  .product-card .list li:before {
+    top: 4px;
+  }
+
   .mobile-btn {
     display: block;
   }
@@ -1884,6 +1887,12 @@ textarea.form-control + .floating-input__label {
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
+  .order-form .checkbox__label,
+  .services__form .checkbox__label {
+    max-width: 300px;
+    display: block;
+  }
+
   h1,
   .order-section__title,
   .section__title {
@@ -1946,3 +1955,4 @@ textarea.form-control + .floating-input__label {
     text-align: center;
   }
 }
+

@@ -91,7 +91,6 @@ $(function () {
     element.scrollIntoView({ block: "start", behavior: "smooth" });
   });
 
-  
   $('.product__order').click(function () {
     let check = $('#order-checkbox');
     check.prop('checked', true);
