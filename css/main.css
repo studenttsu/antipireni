@@ -150,7 +150,8 @@ img {
   border-radius: 50%;
   background-color: var(--blue-color);
   left: 0;
-  top: 6px;
+  top: 50%;
+  transform: translateY(-50%);
   position: absolute;
 }
 
@@ -201,6 +202,7 @@ textarea.form-control.floating-input__input {
 }
 
 .form-control {
+  -webkit-appearance: none;
   height: 60px;
   background: var(--main-gray);
   border: 1px solid var(--main-gray);
@@ -212,12 +214,6 @@ textarea.form-control.floating-input__input {
 
 .form-control:focus {
   background: #fff;
-}
-
-.form-control:focus,
-.floating-input:hover .form-control,
-.form-control:hover {
-  border-color: #dddfe0;
 }
 
 .intl-tel-input {
@@ -337,10 +333,7 @@ width: 100%;
 .checkbox-group__item .checkbox__label {
   cursor: pointer;
   font-size: 14px !important;
-}
-
-.checkbox-group__item:hover {
-  background-color: var(--grey-color);
+  padding-top: 5px;
 }
 
 .floating-input {
@@ -372,7 +365,7 @@ width: 100%;
   position: absolute;
   height: 15px;
   line-height: 1;
-  top: 23px;
+  top: 22px;
   left: 1px;
   right: 1px;
   padding: 0 25px;
@@ -429,6 +422,7 @@ width: 100%;
 
 .services__agree .checkbox__label {
   font-size: 12px;
+  padding-top: 6px;
 }
 
 /* ----------- Header ---------- */
@@ -480,6 +474,11 @@ width: 100%;
   align-items: center;
   transition: 0.3s ease opacity;
   cursor: pointer;
+  height: 22px;
+}
+
+.lang-select span {
+  line-height: 22px;
 }
 
 .lang-select:hover {
@@ -487,6 +486,7 @@ width: 100%;
 }
 
 .lang-select img {
+  display: block;
   margin-right: 10px;
 }
 
@@ -720,6 +720,11 @@ width: 100%;
   font-weight: bold;
   display: block;
   margin-bottom: 30px;
+  color: var(--main-color);
+}
+
+.news-card__title:hover {
+  color: var(--link-color);
 }
 
 .main-slider {
@@ -822,7 +827,11 @@ width: 100%;
 }
 
 .inner-page {
-  padding-bottom: 90px;
+  padding-bottom: 50px;
+}
+
+.inner-page--no-padding {
+  padding-bottom: 0 !important;
 }
 
 .inner-page__breadcrumbs {
@@ -916,7 +925,6 @@ width: 100%;
 .order-form .checkbox__label {
   color: #a19cab;
   font-size: 12px;
-  padding-top: 6px;
 }
 
 .order-section__title {
@@ -1507,6 +1515,11 @@ width: 100%;
   z-index: 300;
 }
 
+.mobile-btn.active::before,
+.mobile-btn.active::after {
+  background-color: #fff;
+}
+
 .mobile-btn.active .mobile-btn-el {
   opacity: 0;
 }
@@ -1732,7 +1745,11 @@ width: 100%;
   }
 
   .header__right {
-    justify-content: space-between;
+    justify-content: flex-end;
+  }
+
+  .header__right .lang-select {
+    margin-right: 25px;
   }
 
   .header__nav,

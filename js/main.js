@@ -30,7 +30,9 @@ $(function () {
     slidesToShow: 1,
     slidesToScroll: 1,
     dots: true,
-    arrows: false
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 3500,
   });
 
   $('input.form-control, textarea.form-control').floatingLabel();
@@ -40,11 +42,6 @@ $(function () {
     $('.mobile-menu').toggleClass('active');
     $('body').toggleClass('no-scroll');
   });
-
-  $.validator.addMethod("phoneValidator", function (phone_number) {
-    const phoneRegexp = /^((8|7|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{10}$|^$/;
-    return phoneRegexp.test(phone_number);
-  }, "Invalid phone number");
 
   $('form#order-form').validate({
     rules: {
@@ -90,10 +87,12 @@ $(function () {
 
   $("button[data-type=order]").click(function () {
     let target = $(this).data('target');
+    const element = document.querySelector(`#${target}`);
+    element.scrollIntoView({ block: "start", behavior: "smooth" });
 
-    $([document.documentElement, document.body]).animate({
-      scrollTop: $(`#${target}`).offset().top
-    }, 1000);
+    // $([document.documentElement, document.body]).animate({
+    //   scrollTop: $(`#${target}`).offset().top
+    // }, 1000);
   });
 
   $('.product__sample').click(function() {
@@ -103,11 +102,6 @@ $(function () {
 
   $('#sample-checkbox').change(function() {
     $('.product__sample').toggleClass('active')
-  });
-
-  $("#phone").intlTelInput({
-    // utilsScript: "js/utils.js",
-    initialCountry: "ru"
   });
 
   function phone_mask(){
