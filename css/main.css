@@ -1669,6 +1669,10 @@ textarea.form-control + .floating-input__label {
     text-align: center;
   }
 
+  input, select, textarea {
+    font-size: 16px;
+  }
+
   .product-cards .col-sm-6 {
     width: 50%;
   }
