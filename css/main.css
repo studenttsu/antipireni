@@ -570,24 +570,33 @@ textarea.form-control + .floating-input__label {
   margin-top: -40px;
 }
 
+.product-cards > div {
+  display: flex;
+}
+
 .product-cards .product-card {
   margin-top: 40px;
   flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .product-card__img {
   max-width: 130px;
   margin: 0 auto 35px;
+  flex-shrink: 0;
 }
 
 .product-card__descr {
   margin-bottom: 20px;
+  flex: 1;
 }
 
 .product-card__title {
   margin: 0 0 20px;
   font-size: 18px;
   font-weight: bold;
+  flex-shrink: 0;
 }
 
 .product-card__list {
@@ -932,6 +941,16 @@ textarea.form-control + .floating-input__label {
 .order-form .floating-input,
 .order-form .btn {
   width: 100%;
+}
+
+.checkbox__label a {
+  display: inline-block;
+  margin-left: 4px;
+  color: currentColor;
+}
+
+.checkbox__label a:hover {
+  color: var(--primary-color);
 }
 
 .order-form .checkbox__label {
